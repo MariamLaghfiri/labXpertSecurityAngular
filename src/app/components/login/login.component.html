@@ -1,0 +1,15 @@
+<form [formGroup]="formLogin" (ngSubmit)="handleLogin()" method="POST">
+    <div class="form-group">
+        <label for="username">User name</label>
+        <input id="username" name="username" formControlName="username" type="username" autocomplete="username" required
+            class="form-control">
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <input id="password" name="password" formControlName="password" type="password" autocomplete="current-password" required class="form-control">
+    </div>
+    <div>
+        <button type="submit"
+            class="btn btn-dark">Sign in</button>
+    </div>
+</form>
